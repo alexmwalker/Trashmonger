@@ -1,0 +1,40 @@
+
+/* we base as much sizing as we can on the body REM sizes set here */ 
+
+
+/* Medium devices (tablets, 48em and up) */
+
+@media (min-width: 48em) {
+    :root {
+        font-size: var(--basefont-tablet);
+        --typescale: 1.25; /* increase the typescale on larger screens */ 
+    }
+    .container{ 
+        max-width: 52rem;
+    }
+}
+
+
+
+/* Large devices (laptops, 64em and up) */
+
+@media (min-width: 64em) {
+    :root {
+        font-size: var(--basefont-laptop);
+    }
+}
+
+
+
+/*  Extra large devices (large desktops, 75em and up)  */
+
+@media (min-width: 80em) {
+    :root {
+        font-size: var(--basefont-wide);
+    }
+}
+
+
+
+
+

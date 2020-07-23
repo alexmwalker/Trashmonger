@@ -1,0 +1,70 @@
+/* ========== CSS Reset ========== */
+
+@import "reset";
+
+/* ========== BASE VARIBALES ========== */
+
+:root {
+    --columns: 5;
+    --typescale: 1.1; /* switches higher at tablet+ */
+
+    --lineheight: 28px;  /* < -- default phone - How tall is the lineheight (not the font-size) */
+    --lineheight-tablet: 24px; 
+    --lineheight-laptop: 28px; 
+    --lineheight-wide: 32px; 
+
+    --lineheightRatio: calc(16/10 );  /* what is the ratio of the 'line-height / body text'  */
+    
+    --baseline: calc(var(--lineheightRatio) * 1rem); /* ( eg, 16/12 * 1rem = 1.333rem)  */
+    --basefont: calc(var(--lineheight) / var(--lineheightRatio)); /* i.e. 32px / 1.7778 = 18px */
+    --basefont-tablet: calc(var(--lineheight-tablet) / var(--lineheightRatio));
+    --basefont-laptop: calc(var(--lineheight-laptop) / var(--lineheightRatio));
+    --basefont-wide:   calc(var(--lineheight-wide)   / var(--lineheightRatio));
+}
+
+body {
+line-height: var(--lineheight);
+font-size: var(--basefont);
+font-family: 'Roboto', sans-serif;
+padding: 0; margin: 0;
+}
+
+.wrapper { 
+    outline: 1px green dashed;
+    width: 100%;
+    margin:0; padding: 0;
+}
+.container{
+    position: relative;
+    outline: 1px red dashed;
+    margin: 0 auto;
+}
+
+@import "core-sizing";
+
+@import "type_sizing";
+
+
+/* ====================================================================
+    GRIDLEX - https://gridlex.devlint.fr
+    Just a Flexbox Grid System - v. 2.7.1
+========================================================================== */
+
+@import "gridlex-vars";
+@import "gridlex-preprocessing";
+@import "gridlex-mixins";
+@import "gridlex-classes";
+
+
+@import "header";
+@import "hero";
+
+@import "under-construction";
+
+
+$mqueries: (
+    "lg": 80em,
+    "md": 64em,
+    "sm": 48em,
+    "xs": 36em);
+

@@ -1,0 +1,5 @@
+img#brand{
+    height: calc(var(--baseline) * 1.5);
+    margin-top: calc(var(--baseline) * .5);
+    outline: 1px red dashed;
+}

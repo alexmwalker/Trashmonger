@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="pattern-0-0" patternTransform="matrix(1, 0, 0, 1, 104.504517, 96.947977)" xlink:href="#pattern-0"/>
+    <pattern id="pattern-0" viewBox="0 0 144 144" patternUnits="userSpaceOnUse" preserveAspectRatio="none" width="50" height="50">
+      <rect x="0" y="0" width="144" height="144" style="fill: rgb(69, 69, 69);"/>
+      <use width="144" height="144" transform="matrix(1.000493, 0, 0, 0.998986, -0.056133, 0.11343)" style="" xlink:href="#symbol-0"/>
+      <use width="144" height="144" transform="matrix(0.998986, 0, 0, 0.998986, 71.709091, 71.992935)" style="" xlink:href="#symbol-0"/>
+      <use width="144" height="144" transform="matrix(0.998986, 0, 0, 0.999281, -71.831917, 71.982407)" style="" xlink:href="#symbol-0"/>
+      <use width="144" height="144" transform="matrix(0.998986, 0, 0, 0.998986, 72.087517, -71.713089)" style="" xlink:href="#symbol-0"/>
+      <use width="144" height="144" transform="matrix(0.998986, 0, 0, 0.999233, -71.869331, -71.330704)" style="" xlink:href="#symbol-0"/>
+    </pattern>
+    <symbol id="symbol-0" viewBox="0 0 144 144">
+      <path d="M144 72C144 32.2355 111.765 0 72 0C32.2355 0 0 32.2355 0 72C39.7645 72 72 104.235 72 144C72 104.235 104.236 72 144 72Z" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(61, 61, 61);"/>
+      <path d="M131.967 73.001C131.989 72.3367 132 71.6696 132 71C132 37.8629 105.137 11 72 11C38.8629 11 12 37.8629 12 71C12 71.6696 12.011 72.3367 12.0327 73.001C41.8295 78.0141 65.4141 101.33 70.8274 130.989C71.2174 130.996 71.6082 131 72 131C72.3918 131 72.7826 130.996 73.1726 130.989C78.5859 101.33 102.171 78.0141 131.967 73.001Z" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(76, 76, 76);"/>
+      <path d="M119.822 76.16C119.94 74.789 120 73.4015 120 72C120 45.4903 98.5097 24 72 24C45.4903 24 24 45.4903 24 72C24 73.4015 24.0601 74.789 24.1778 76.16C44.4926 83.4007 60.5993 99.5074 67.84 119.822C69.211 119.94 70.5985 120 72 120C73.4015 120 74.789 119.94 76.16 119.822C83.4007 99.5074 99.5074 83.4007 119.822 76.16Z" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(63, 63, 63);"/>
+      <path d="M106.423 82.5718C107.448 79.2289 108 75.6789 108 72C108 52.1177 91.8823 36 72 36C52.1177 36 36 52.1177 36 72C36 75.6789 36.5518 79.2289 37.5772 82.5718C47.2866 88.5239 55.4761 96.7134 61.4282 106.423C64.7711 107.448 68.3211 108 72 108C75.6789 108 79.2289 107.448 82.5718 106.423C88.5239 96.7134 96.7134 88.5239 106.423 82.5718Z" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(79, 79, 79);"/>
+      <circle cx="72" cy="72" r="24" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(65, 65, 65);"/>
+      <circle cx="72" cy="72" r="12" transform="matrix(1, 0, 0, 1, 0, 0)" style="fill: rgb(76, 76, 76);"/>
+    </symbol>
+  </defs>
+  <rect x="0" y="0" width="500" height="250" style="fill: url(#pattern-0-0);"/>
+</svg>
