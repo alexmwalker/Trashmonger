@@ -23,10 +23,10 @@
 }
 
 body {
-line-height: var(--lineheight);
-font-size: var(--basefont);
-font-family: 'Roboto', sans-serif;
-padding: 0; margin: 0;
+    line-height: var(--lineheight);
+    font-size: var(--basefont);
+    font-family: 'Roboto', sans-serif;
+    padding: 0; margin: 0;
 }
 
 .wrapper { 
@@ -42,7 +42,7 @@ padding: 0; margin: 0;
 
 @import "core-sizing";
 
-@import "type_sizing";
+@import "typo-sizing";
 
 
 /* ====================================================================
@@ -58,6 +58,13 @@ padding: 0; margin: 0;
 
 @import "header";
 @import "hero";
+@import "feature";
+
+@import "artwork";
+
+
+@import "utilities";
+
 
 @import "under-construction";
 

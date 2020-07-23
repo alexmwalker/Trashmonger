@@ -1003,6 +1003,16 @@ img#brand {
   outline: 1px red dashed;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: calc(var(--baseline) * .75);
+}
+
+.link {
+  outline: 1px red dashed;
+}
+
 .herobase {
   background: #999 url(../../../images/banners/tiler-base2.svg) 50% 0%;
   background-size: 30% auto;
@@ -1012,6 +1022,25 @@ img#brand {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.herobase {
+  background: #999 url(../../../images/banners/tiler-base2.svg) 50% 0%;
+  background-size: 30% auto;
+}
+
+.hero img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.artwork {
+  margin-top: var(--baseline);
+}
+
+.ctr {
+  text-align: center;
 }
 
 /*  vertical rows AND columns based on the body line-height 

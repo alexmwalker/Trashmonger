@@ -3,3 +3,14 @@ img#brand{
     margin-top: calc(var(--baseline) * .5);
     outline: 1px red dashed;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: calc(var(--baseline) * .75);
+  }
+
+.link{
+    outline: 1px red dashed; 
+}
+
