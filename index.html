@@ -23,13 +23,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;1,200;1,500;1,600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/css/styles.css">
   </head>
-  <body class="-vr -labelling feedback">
+  <body class="vr -labelling feedback">
     <div class="wrapper">
       <div class="container">
         <header class="grid">
-          <div class="col-3_xs-5" id="branding"><a href="#" title="Home"><img src="images/trashmonger.svg" alt="Trashmonger" id="brand"/> </a></div>
-          <div class="col-2_xs-5">
-            <nav class="navbar is-size-4"><a class="link" href="#" title="About">About</a><a class="link" href="#" title="Store">Blog</a><a class="link" href="#" title="Contact">Contact</a></nav>
+          <div class="col-3_xs-4" id="branding"><a href="#" title="Home"><img src="images/trashmonger.svg" alt="Trashmonger" id="brand"/> </a></div>
+          <div class="col-2_xs-hidden">
+            <nav class="navbar"><a class="link" href="#" title="About">About </a><a class="link" href="#" title="Contact">Contact</a></nav>
+          </div>
+          <div class="col-1 mobilenav">
+            <div class="hamburger">
+              <input class="hamburger_input" id="toggle" type="checkbox" name="hamburger" value="0">
+              <label class="hamburger_label" for="toggle"><span></span></label>
+              <div class="hamburger_body">
+                <ul>
+                  <li><a class="link" href="about.html" title="About">About </a></li>
+                  <li><a class="link" href="contact.html" title="Contact">Contact </a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </header>
       </div>

@@ -2,7 +2,7 @@
 <svg viewBox="0 0 432 216" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <pattern id="pattern1" x="0" y="0" width="144" height="72" patternUnits="userSpaceOnUse" patternTransform="translate(0,0)">
-      <rect width="72" height="72" fill="#b4b4b4"/>
+      <rect width="144" height="72" fill="#b4b4b4"/>
       <use width="72" height="72" transform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#circles"/>
       <g class="two-part">
         <use width="72" height="72" transform="matrix(-1, 0, 0, 1, 72, 36)" xlink:href="#circles"/>

@@ -1,0 +1,42 @@
+/* While our default is to  try to scale everything relative to the  HTML{} there are elements 
+that need device level targeting. This is where we do it. */
+.showmobile,
+.mobilenav {
+  display: none;
+}
+
+
+@media (max-width: 32em) {
+
+  .showmobile,
+  .mobilenav {
+    display: block;
+  }
+
+}
+
+
+@media (max-width: 32em) {
+
+ 
+  .showmobile,
+  .mobilenav {
+    display: block;
+  }
+
+
+  [class*="xs-only"] {
+    display: none;
+  }
+
+}
+
+
+/*  <--  end of the media query  */
+
+
+@media (min-width: 32em) {
+  [class*="xs-only"] {
+    display: block;
+  }
+}

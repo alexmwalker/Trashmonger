@@ -1,0 +1,153 @@
+$easing: .4s cubic-bezier(.45, .45, .37, 1.36);
+$text-color: #333;
+
+header {
+  //background: #333;
+  //position: fixed;
+  width: 100%;
+}
+
+
+@mixin hiddenInput {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.hamburger {
+  padding: 0;
+  width: 100%;
+  position: relative;
+  pointer-events: none;
+  margin: 0;
+
+  ul {
+    padding: 0;
+    margin: 0
+  }
+
+  li {
+    list-style-type: none;
+    text-align: left;
+    line-height: calc(var(--baseline) * 1.5);
+    pointer-events: auto;
+    white-space: nowrap;
+
+    a {
+
+      &:link,
+      &:visited {
+        background: darken($text-color, 10deg);
+        color: #eee;
+        text-decoration: none;
+        display: block;
+        padding: 0 2rem;
+      }
+
+      &:hover {
+        background: $text-color;
+        color: #fff;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &_input {
+    pointer-events: auto;
+    @include hiddenInput;
+
+    &:checked {
+      ~.hamburger_body {
+        display: block;
+        transform: translateX(0%);
+        transition: transform 0.3s ease-out;
+      }
+    }
+  }
+
+  &_label {
+    display: block;
+    //padding-bottom: 10px;
+    //border-bottom: 1px solid #292929;
+    font-weight: bold;
+    font-size: inherit;
+    cursor: pointer;
+  }
+
+  &_body {
+    //display: none;
+    background: #fff;
+    right: 0;
+    margin-top: calc(var(--baseline) * 1);
+    position: absolute;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .5);
+    transform: translateX(110%);
+    transition: transform 0.3s ease-out;
+  }
+}
+
+.hamburger_label {
+  font-size: 1.5em;
+  height: 1.0em;
+  //width: 100%;
+  //background: #333;
+  pointer-events: auto;
+  height: calc(var(--baseline) * 2);
+
+  span {
+    background: $text-color;
+    border-radius: 0.05em;
+    display: block;
+    font-size: 1.5em;
+    float: right;
+    height: 0.1em;
+    margin: 0 0.5em;
+    width: 1em;
+    transform-origin: 50% 50%;
+    transform: translateY(calc(var(--baseline) * 1.15));
+    transition: background $easing;
+
+    &:before,
+    &:after {
+      background: $text-color;
+      border-radius: inherit;
+      display: inherit;
+      position: absolute;
+      content: '';
+      width: inherit;
+      height: inherit;
+      top: 0;
+      left: 0;
+      transform-origin: 50% 50%;
+      transform: translateY(.3em); // rotate(45deg);
+      transition: transform $easing;
+    }
+
+    &:before {
+      transform: translateY(-.3em); // rotate(45deg);
+    }
+  }
+}
+
+//switch hamburger to x animation
+.hamburger {
+  input:checked+.hamburger_label span {
+    background: transparent;
+    transition: background $easing;
+
+    &:after {
+      transform: translateY(0em) rotate(-135deg);
+      transition: transform $easing
+    }
+
+    &:before {
+      transform: translateY(0em) rotate(135deg);
+      transition: transform $easing
+    }
+  }
+}

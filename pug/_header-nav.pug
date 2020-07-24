@@ -1,11 +1,22 @@
 .wrapper
   .container
     header.grid
-      .col-3_xs-5(id='branding')
+      .col-3_xs-4(id='branding')
         a(href='#', title='Home')
           img(src='images/trashmonger.svg', alt='Trashmonger', id='brand')/ 
-      .col-2_xs-5
-        nav.navbar.is-size-4
-          a.link(href='#', title='About') About
-          a.link(href='#', title='Store') Blog
+      .col-2_xs-hidden
+        nav.navbar
+          a.link(href='#', title='About') About 
           a.link(href='#', title='Contact') Contact
+      .col-1.mobilenav
+        .hamburger
+          input#toggle.hamburger_input(type='checkbox', name='hamburger', value='0')
+          label.hamburger_label(for='toggle')
+            span
+          .hamburger_body
+            ul
+              li
+                a.link(href='about.html', title='About') About 
+              li
+                a.link(href='contact.html', title='Contact') Contact 
+ 
