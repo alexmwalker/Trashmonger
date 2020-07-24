@@ -47,13 +47,24 @@ img {
 body {
   line-height: var(--lineheight);
   font-size: var(--basefont);
+  color: #333;
   font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
 }
 
+a:link {
+  color: #000;
+}
+a:visited {
+  color: #555;
+}
+a:hover {
+  text-decoration: underline;
+  color: #500;
+}
+
 .wrapper {
-  outline: 1px green dashed;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -61,7 +72,6 @@ body {
 
 .container {
   position: relative;
-  outline: 1px red dashed;
   margin: 0 auto;
 }
 
@@ -999,8 +1009,7 @@ a:link {
 }
 img#brand {
   height: calc(var(--baseline) * 1.5);
-  margin-top: calc(var(--baseline) * .5);
-  outline: 1px red dashed;
+  margin: calc(var(--baseline) * .5) 0 0 calc(var(--baseline) * .5);
 }
 
 .navbar {
@@ -1010,7 +1019,7 @@ img#brand {
 }
 
 .link {
-  outline: 1px red dashed;
+  /* hi */
 }
 
 .herobase {
@@ -1026,6 +1035,11 @@ img#brand {
 
 #welcome .avatar {
   width: calc(var(--baseline) * 4);
+  margin: 0 0 calc(var(--baseline) * 1) 0;
+}
+#welcome p {
+  width: 50%;
+  margin: 0 auto calc(var(--baseline) /2);
 }
 
 .artwork {
@@ -1053,7 +1067,7 @@ img#brand {
 }
 
 .panel {
-  background: #ddd;
+  background: #f6f6ff;
 }
 
 .ctr {
@@ -1064,23 +1078,43 @@ img#brand {
   border-bottom: 1px solid #999;
 }
 
-.button {
-  /* Primary button */
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  background: #F72E53;
-  border-radius: 3px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 21px;
-  line-height: 31px;
-  display: flex;
-  align-items: center;
+.button-container {
   text-align: center;
-  color: #FFFFFF;
 }
 
+.button {
+  /* Primary button */
+  line-height: calc(var(--baseline) *1.5);
+  border-radius: calc(var(--baseline) * 1);
+  font-size: calc(var(--typescale) * 1rem);
+  border: 2px solid #f55;
+  color: #f55;
+  padding: 0 2vw;
+  background: #fff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+
+background: #F72E53;
+border-radius: 3px;
+
+
+
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 31px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+*/
 /*  vertical rows AND columns based on the body line-height 
 
   --columns: 5;

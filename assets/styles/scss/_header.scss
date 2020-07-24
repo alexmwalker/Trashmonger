@@ -1,7 +1,7 @@
 img#brand{
     height: calc(var(--baseline) * 1.5);
-    margin-top: calc(var(--baseline) * .5);
-    outline: 1px red dashed;
+    margin: calc(var(--baseline) * .5) 0 0 calc(var(--baseline) * .5);
+    
 }
 
 .navbar {
@@ -11,6 +11,7 @@ img#brand{
   }
 
 .link{
-    outline: 1px red dashed; 
+    //outline: 1px red dashed; 
+    /* hi */
 }
 

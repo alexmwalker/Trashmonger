@@ -7,7 +7,7 @@
     }
 }
 .panel{
-    background: #ddd;
+    background: #f6f6ff;
 }
 .ctr{
     text-align: center;
@@ -15,11 +15,20 @@
 .underline{
     border-bottom: 1px solid #999;
 }
-
-.button{
-    /* Primary button */
-
-
+.button-container{
+    text-align: center;
+}
+.button{/* Primary button */
+    line-height: calc(var(--baseline) *1.5);
+    border-radius: calc(var(--baseline) * 1);
+    font-size: calc(var(--typescale) * 1rem);
+    border: 2px solid #f55;
+    color:  #f55;
+    padding:0 2vw;
+    background: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+/*
 box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
 
@@ -39,6 +48,6 @@ align-items: center;
 text-align: center;
 
 color: #FFFFFF;
+*/
 
-}
 
