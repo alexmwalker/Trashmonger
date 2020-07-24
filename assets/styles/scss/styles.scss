@@ -13,7 +13,7 @@
     --lineheight-laptop: 28px; 
     --lineheight-wide: 32px; 
 
-    --lineheightRatio: calc(16/10 );  /* what is the ratio of the 'line-height / body text'  */
+    --lineheightRatio: calc(16/8 );  /* what is the ratio of the 'line-height / body text'  */
     
     --baseline: calc(var(--lineheightRatio) * 1rem); /* ( eg, 16/12 * 1rem = 1.333rem)  */
     --basefont: calc(var(--lineheight) / var(--lineheightRatio)); /* i.e. 32px / 1.7778 = 18px */
@@ -22,10 +22,13 @@
     --basefont-wide:   calc(var(--lineheight-wide)   / var(--lineheightRatio));
 }
 
+
+
 body {
     line-height: var(--lineheight);
     font-size: var(--basefont);
-    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
     padding: 0; margin: 0;
 }
 
@@ -69,9 +72,4 @@ body {
 @import "under-construction";
 
 
-$mqueries: (
-    "lg": 80em,
-    "md": 64em,
-    "sm": 48em,
-    "xs": 36em);
 
