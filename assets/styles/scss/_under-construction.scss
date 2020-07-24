@@ -32,7 +32,7 @@
   }
 
 /* Device feedback control */
-  .vr .device {
+  .feedback .device {
     font-size: 3vw;
     width: 8vw;
     height: 8vw;
@@ -47,7 +47,7 @@
     background-repeat: no-repeat;
   }
   
-  .vr .device:after {
+  .feedback .device:after {
     display: block;
     position: absolute;
     content: "Mobile"; 
@@ -63,12 +63,12 @@
     outline: 1px #333 solid;
     text-transform: uppercase;
   }
-  .vr .device {
+  .feedback .device {
     background-position: left top;
   }
   /* Broadcast currently active Typescale */
 
-  .vr .device::before{
+  .feedback .device::before{
       display: block;
       position: absolute;
       font-size: 1vw;
@@ -108,10 +108,10 @@
   /* Medium devices (tablets, 48em and up)*/
   
   @media (min-width: 48em) {
-    .vr .device {
+    .feedback .device {
       background-position: 33.333% top;
     }
-    .vr .device:after {
+    .feedback .device:after {
       content: "Tablet";
       background: rgb(0, 153, 128);
     }
@@ -125,10 +125,10 @@
   
   /* Large devices (desktops, 64em and up)*/
   @media (min-width: 64em) {
-    .vr .device {
+    .feedback .device {
       background-position: 66.666% top;
     }
-    .vr .device:after {
+    .feedback .device:after {
       content: "Laptop";
       background: #dd9933;
     }
@@ -142,10 +142,10 @@
   
   /* Extra large devices (large desktops, 80em and up)*/
   @media (min-width: 80em) {
-    .vr .device {
+    .feedback .device {
       background-position: right top;
     }
-    .vr .device:after {
+    .feedback .device:after {
       content: "Wide";
       background: #ff5511;
     }
