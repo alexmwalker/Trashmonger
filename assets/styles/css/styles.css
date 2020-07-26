@@ -65,9 +65,9 @@ a:hover {
 }
 
 .wrapper {
-  width: 98%;
-  margin: 0 1%;
-  padding: 0;
+  width: 96%;
+  margin: 0 auto;
+  padding: 0 2%;
 }
 
 .container {
