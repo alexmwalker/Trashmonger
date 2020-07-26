@@ -1157,15 +1157,14 @@ header {
 
 #welcome .avatar {
   width: calc(var(--baseline) * 4);
-  margin: 0 0 calc(var(--baseline) * 1) 0;
+  margin: 0 0 calc(var(--baseline) * 0.5) 0;
 }
-#welcome p {
-  width: 50%;
-  margin: 0 auto calc(var(--baseline) /2);
-}
-
 .artwork {
   margin-top: var(--baseline);
+}
+
+.social {
+  font-weight: 300;
 }
 
 [class~=grid] [class*=col-].top-1 {
@@ -1192,8 +1191,16 @@ header {
   background: #f6f6ff;
 }
 
-.ctr {
+.text-ctr {
   text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .underline {

@@ -1,15 +1,17 @@
-.wrapper
+.wrapper.dark
   .container
     .grid
-      #welcome.col-2_sm-5.ctr.top-4          
-        img.avatar(src='images/assets/trish.png', alt='Trish')
-        p Welcome! Trashmonger is my place to share the things I make and the things I see. Let me know if you find something you like!
-        p TrishB.
+      #welcome.col-2_sm-5.align-center.top-3.grid-center
+        .col-3_sm-2         
+          img.avatar(src='images/assets/trish.png', alt='Trish')
+        .col-3_sm-2
+          p Welcome! Trashmonger is my place to share the things I make and the things I see. Let me know if you find something you like!
+          p TrishB.
       .col-3_sm-5.top-2
         h3.underline New release
         .grid.panel
           .col-3 
-              img.artwork(src="images/artwork/demo.jpg")
+              img(src="images/artwork/demo.jpg")
           .col-2
               h4 Can’t Get There From Here
               p.minor 
