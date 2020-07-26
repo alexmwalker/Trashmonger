@@ -65,8 +65,8 @@ a:hover {
 }
 
 .wrapper {
-  width: 100%;
-  margin: 0;
+  width: 98%;
+  margin: 0 1%;
   padding: 0;
 }
 
@@ -86,6 +86,11 @@ a:hover {
 
   .container {
     max-width: 64rem;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin: 0;
   }
 }
 /* Large devices (laptops, 64em and up) */
@@ -1071,6 +1076,7 @@ header {
   display: block;
   transform: translateX(0%);
   transition: transform 0.3s ease-out;
+  z-index: 999;
 }
 .hamburger_label {
   display: block;
@@ -1081,7 +1087,7 @@ header {
 .hamburger_body {
   background: #fff;
   right: 0;
-  margin-top: calc(var(--baseline) * 1);
+  margin-top: calc(var(--baseline) * 0.5);
   position: absolute;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
   transform: translateX(110%);
