@@ -7,7 +7,23 @@
     }
 }
 .panel{
-    background: #f6f6ff;
+    background: var(--color-fill-1);
+}
+.panel-dark{
+        color: var(--color-fill-3);
+        padding: calc(var(--baseline) * 1) 0;
+        margin: calc(var(--baseline) * 2) 0 0;
+        background-color: var(--color-fill-4); 
+        
+        background-size: 30% auto;
+        background-image: 
+            linear-gradient(to bottom, 
+            rgba(47,62,70,1) 0%, 
+            rgba(47,62,70,1) 15%, 
+            rgba(47,62,70,0) 15%,
+             rgba(47,62,70,0) 100%),
+            url(../../../images/banners/tiler-base-3.svg); 
+        padding-bottom: calc(var(--baseline) * 5);
 }
 .align-center{
     text-align: center;
@@ -24,36 +40,18 @@
 .button-container{
     text-align: center;
 }
-.button{/* Primary button */
-    line-height: calc(var(--baseline) *1.5);
+.button{ /* Primary button */
+    line-height: calc(var(--baseline) *1);
     border-radius: calc(var(--baseline) * 1);
     font-size: calc(var(--typescale) * 1rem);
-    border: 2px solid #f55;
-    color:  #f55;
-    padding:0 2vw;
+    font-size: 1rem;
+    border: 1px solid var(--color-sig-hover);
+    color:  var(--color-sig4);
+    padding:0 3vw;
     background: #fff;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+    &:hover{
+        color: var(--color-sig-hover);
+    }
 }
-/*
-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-
-
-background: #F72E53;
-border-radius: 3px;
-
-
-
-font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 21px;
-line-height: 31px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #FFFFFF;
-*/
-
 

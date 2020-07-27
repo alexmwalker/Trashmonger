@@ -1,5 +1,7 @@
 .social{
     font-weight: 300;
+    display: block;
+    margin-top: calc(var(--baseline) / 2);
 }
 .icon{
     width: calc(var(--baseline) * 1);

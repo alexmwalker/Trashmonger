@@ -1,9 +1,21 @@
 .herobase{
-    background:#999  url(../../../images/banners/tiler-base.svg) 50% 0%; 
+    background: var(--color-fill-4)  url(../../../images/banners/tiler-base-3.svg) 50% 0%; 
     background-size: 30% auto;
 }
-.hero img{
-    width: 100%;
-    margin: 0;
-    padding: 0;
+.hero{ 
+    img{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    &:after{
+        display: block;
+        position: absolute;
+        background: linear-gradient(180deg, rgba(47,62,70,0) 0%, rgba(47,62,70,0.75) 100%);
+        content: '';
+        width: 100%;
+        height: calc(var(--baseline) * 4);
+        bottom: 0;
+        left: 0;
+    }
 }

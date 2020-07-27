@@ -1,17 +1,15 @@
 img#brand{
     height: calc(var(--baseline) * 1.5);
-    margin: calc(var(--baseline) * .5) 0 0 calc(var(--baseline) * .5);
-    
+    margin: calc(var(--baseline) * .5) 0 calc(var(--baseline) * .25) 0;
 }
 
 .navbar {
     display: flex;
     justify-content: space-around;
-    margin-top: calc(var(--baseline) * .75);
+    margin-top: calc(var(--baseline) * 1);
   }
 
-.link{
+/*.link{
     //outline: 1px red dashed; 
-    /* hi */
-}
+}*/
 
