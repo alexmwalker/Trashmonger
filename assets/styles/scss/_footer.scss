@@ -1,17 +1,5 @@
 .footer{
     color: var(--color-fill-3);
-    margin: calc(var(--baseline) * 2) 0 0;
-    background-color: var(--color-fill-4); 
-    
-    background-size: 30% auto;
-    background-image: 
-        linear-gradient(to bottom, 
-        rgba(47,62,70,1) 0%, 
-        rgba(47,62,70,1) 15%, 
-        rgba(47,62,70,0) 15%,
-         rgba(47,62,70,0) 100%),
-        url(../../../images/banners/tiler-base-3.svg); 
-    padding-bottom: calc(var(--baseline) * 5);
     p{
         line-height: calc(var(--baseline) * 1.25);
     }

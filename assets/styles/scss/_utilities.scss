@@ -10,20 +10,16 @@
     background: var(--color-fill-1);
 }
 .panel-dark{
-        color: var(--color-fill-3);
-        padding: calc(var(--baseline) * 1) 0;
-        margin: calc(var(--baseline) * 2) 0 0;
-        background-color: var(--color-fill-4); 
-        
-        background-size: 30% auto;
-        background-image: 
-            linear-gradient(to bottom, 
-            rgba(47,62,70,1) 0%, 
-            rgba(47,62,70,1) 15%, 
-            rgba(47,62,70,0) 15%,
-             rgba(47,62,70,0) 100%),
-            url(../../../images/banners/tiler-base-3.svg); 
-        padding-bottom: calc(var(--baseline) * 5);
+    color: var(--color-fill-2);
+    padding: calc(var(--baseline) * 1) 0;
+    margin: calc(var(--baseline) * 2) 0 0;
+    outline: 1px cyan dashed;
+    background-color: var(--color-fill-4);    
+    background-size: 30% auto;
+    background-image: url(../../../images/banners/tiler-base-3.svg);
+}
+.inner{
+    padding: calc(var(--baseline) * 1) 0;
 }
 .align-center{
     text-align: center;

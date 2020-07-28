@@ -83,6 +83,12 @@ a:hover {
   margin: 0 auto;
 }
 
+.inner {
+  background-color: var(--color-fill-5);
+  margin: h1, h2, h3, h4, h5, p;
+  margin-color: var(--color-fill-2);
+}
+
 /* we base as much sizing as we can on the body REM sizes set here */
 /* Medium devices (tablets, 48em and up) */
 @media (min-width: 48em) {
@@ -1215,11 +1221,6 @@ header {
 
 .footer {
   color: var(--color-fill-3);
-  margin: calc(var(--baseline) * 2) 0 0;
-  background-color: var(--color-fill-4);
-  background-size: 30% auto;
-  background-image: linear-gradient(to bottom, #2f3e46 0%, #2f3e46 15%, rgba(47, 62, 70, 0) 15%, rgba(47, 62, 70, 0) 100%), url(../../../images/banners/tiler-base-3.svg);
-  padding-bottom: calc(var(--baseline) * 5);
 }
 .footer p {
   line-height: calc(var(--baseline) * 1.25);
@@ -1254,13 +1255,17 @@ body *:before {
 }
 
 .panel-dark {
-  color: var(--color-fill-3);
+  color: var(--color-fill-2);
   padding: calc(var(--baseline) * 1) 0;
   margin: calc(var(--baseline) * 2) 0 0;
+  outline: 1px cyan dashed;
   background-color: var(--color-fill-4);
   background-size: 30% auto;
-  background-image: linear-gradient(to bottom, #2f3e46 0%, #2f3e46 15%, rgba(47, 62, 70, 0) 15%, rgba(47, 62, 70, 0) 100%), url(../../../images/banners/tiler-base-3.svg);
-  padding-bottom: calc(var(--baseline) * 5);
+  background-image: url(../../../images/banners/tiler-base-3.svg);
+}
+
+.inner {
+  padding: calc(var(--baseline) * 1) 0;
 }
 
 .align-center {
