@@ -18,6 +18,9 @@
     background-size: 60%;
     background-image: url(../../../images/banners/tiler-base-5.svg);
 }
+.tile-1{
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 432 216' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='140' height='104' style='fill:url(%23final)'/%3E%3C/svg%3E");
+} 
 .inner{
     padding: calc(var(--baseline) * 1) 0;
 }

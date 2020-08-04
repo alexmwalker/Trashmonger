@@ -1264,6 +1264,15 @@ body *:before {
   background-image: url(../../../images/banners/tiler-base-5.svg);
 }
 
+
+
+
+.tile-1 {
+  background-image: url(../../../images/banners/tiler-base-5.svg);
+  background-image: linear-gradient(rgba(58, 85, 92,.75), rgba(58, 85, 92,.25)), url(../../../images/banners/tiler-base-5.svg);
+  outline: 1px red dashed;
+}
+
 .inner {
   padding: calc(var(--baseline) * 1) 0;
 }
