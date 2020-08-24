@@ -29,6 +29,7 @@
     --color-fill-4:    #354F52;
     --color-fill-5:    #2F3E46;
     --color-sig-hover: #FF0C80;
+    --color-darkBGtext:#F2F2F2;
 }
 
 
@@ -52,6 +53,23 @@ a{
         color:#200;
     }
 }
+.panel-dark{
+    h1,h2,h3,h4,h5,p{
+        color: var(--color-darkBGtext);   
+    }
+    a{
+        &:link{
+            color: --color-darkBGtext;
+        }
+        &:visited{
+            color:#aaa;
+        }
+        &:hover{
+            color:#fff;
+        }
+    }    
+}
+
 .wrapper { 
     width: 96%;
     margin:0 auto; padding: 0 2%;
