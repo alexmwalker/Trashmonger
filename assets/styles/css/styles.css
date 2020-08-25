@@ -33,7 +33,7 @@ img {
   --lineheight-tablet: 24px;
   --lineheight-laptop: 28px;
   --lineheight-wide: 32px;
-  --lineheightRatio: calc(16/8 );
+  --lineheightRatio: calc(16/8);
   /* what is the ratio of the 'line-height / body text'  */
   --baseline: calc(var(--lineheightRatio) * 1rem);
   /* ( eg, 16/12 * 1rem = 1.333rem)  */
@@ -1042,7 +1042,7 @@ a:link {
 }
 img#brand {
   height: calc(var(--baseline) * 1.5);
-  margin: calc(var(--baseline) * .5) 0 calc(var(--baseline) * .25) 0;
+  margin: calc(var(--baseline) * .5) 0 0 0;
 }
 
 .navbar {

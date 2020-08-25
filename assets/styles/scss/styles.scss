@@ -13,7 +13,7 @@
     --lineheight-laptop: 28px; 
     --lineheight-wide: 32px; 
 
-    --lineheightRatio: calc(16/8 );  /* what is the ratio of the 'line-height / body text'  */
+    --lineheightRatio: calc(16/8);  /* what is the ratio of the 'line-height / body text'  */
     
     --baseline: calc(var(--lineheightRatio) * 1rem); /* ( eg, 16/12 * 1rem = 1.333rem)  */
     --basefont: calc(var(--lineheight) / var(--lineheightRatio)); /* i.e. 32px / 1.7778 = 18px */
