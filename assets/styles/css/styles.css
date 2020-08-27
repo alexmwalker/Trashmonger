@@ -1271,8 +1271,7 @@ body *:before {
 .panel-dark {
   color: var(--color-fill-2);
   padding: calc(var(--baseline) * 1) 0;
-  margin: calc(var(--baseline) * 2) 0 0;
-  outline: 1px cyan dashed;
+  margin: calc(var(--baseline) * 1) 0 0;
   background-color: var(--color-fill-4);
   background-size: 60%;
   background-image: url(../../../images/banners/tiler-base-5.svg);
